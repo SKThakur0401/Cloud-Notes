@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="#77222222">
+
+    <ImageView
+        android:id="@+id/btnBackToMainFrag"
+        android:layout_width="39dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="15dp"
+
+        android:layout_marginTop="6dp"
+        android:background="@drawable/back_arrow_notes_frag"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></ImageView>
+
+    <ImageView
+        android:id="@+id/btnSaveNote"
+        android:layout_width="35dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/tick_mark_notes_frag"
+        app:layout_constraintBottom_toBottomOf="@+id/btnDelNote"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></ImageView>
+
+    <ImageView
+        android:id="@+id/btnDelNote"
+        android:layout_width="30dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/del_btn_notes_frag"
+        app:layout_constraintEnd_toStartOf="@+id/btnSaveNote"
+        app:layout_constraintTop_toTopOf="@+id/btnSaveNote" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
